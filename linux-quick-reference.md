@@ -14,16 +14,16 @@ Sure! Here’s the condensed list with examples on the same line:
 ### Commands to Help Navigate Directories
 
 - `pwd`: Print Working Directory. Displays path of current directory.  
-  *Example:* `pwd` → `/home/user/documents`
+   ```pwd` → `/home/user/documents```
   
 - `cd <directory>`: Change Directory to specified path.  
-  *Example:* `cd projects`
+   ```cd projects```
   
 - `cd ..`: Return to previous or parent directory.  
-  *Example:* `cd ..`
+   ```cd ..```
   
 - `ls`: List contents of current directory.  
-  *Example:* `ls` → `file1.txt file2.txt projects`
+  ``` ls → file1.txt file2.txt projects ```
   
 - `ls -la`: List including hidden files.  
   *Example:* `ls -la` → `drwxr-xr-x 3 user user 4096 Oct 29 12:00 .`
