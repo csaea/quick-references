@@ -3,7 +3,7 @@
 Quick reference for Linux fundamentals.
 
 ## Table of Contents
-- [Data Types](#basic-commands)
+- [Basic Commands](#basic-commands)
 
 ## Basic Commands
 
