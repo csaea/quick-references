@@ -1,6 +1,13 @@
-# Linux Commands
+# **Linux Quick Reference**
 
-### Basic Commands (options in parenthesis)
+Quick reference for Linux fundamentals.
+
+## Table of Contents
+- [Data Types](#basic-commands)
+
+## Basic Commands
+
+A collection of basic commands. Common options in parenthesis. 
 
 - `pwd`: Print Working Directory. Displays path of current directory.  
 - `cd <directory>`: Change Directory to specified path.  
