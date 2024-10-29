@@ -49,3 +49,32 @@ Sure! Here’s the condensed list with examples on the same line:
 - `>>`: Append the output of a command into a file.  
   *Example:* `echo "Another line" >> hello.txt`
 
+## File Listing
+
+```bash
+-rw-r--r-- 1 alice staff 2048 Oct 29 14:30 example.txt
+```
+
+This line provides a  overview of a regular file, including permissions, ownership, size, modification time, and filename.
+
+### Breakdown:
+
+- **`-rw-r--r--`**: 
+  - **`-`**: Regular file (not a directory).
+  - **`rw-`**: Owner (alice) has read and write permissions.
+  - **`r--`**: Group (staff) has read permissions only.
+  - **`r--`**: Others have read permissions only.
+
+- **`1`**: Number of hard links to the file.
+
+- **`alice`**: Owner's name.
+
+- **`staff`**: Group name.
+
+- **`2048`**: Size of the file in bytes.
+
+- **`Oct 29 14:30`**: Last modified date and time.
+
+- **`example.txt`**: Name of the file.
+
+
