@@ -3,11 +3,16 @@
 Quick reference for Linux fundamentals.
 
 ## Table of Contents
-- [Basic Commands](#basic-commands)
+- [Common Commands](#common-commands)
 
-## Basic Commands
+## Common Commands
 
-A collection of basic commands. Common options in parenthesis. 
+Commonly used commands. (Common options in parenthesis). 
+
+-`ctrl + c`: Halt current process and return to new command line.
+-`ctrl + shift + c`: Copy. (`+ v` to paste)
+-`quit`/`exit`/`logout`: Depends on context, will end current shell or session. 
+
 
 - `pwd`: Print Working Directory. Displays path of current directory.  
 - `cd <directory>`: Change Directory to specified path.  
