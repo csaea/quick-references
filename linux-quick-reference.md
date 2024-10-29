@@ -3,19 +3,19 @@
 Quick reference for Linux fundamentals.
 
 ## Table of Contents
-- [Common Commands](#common-commands)
-- [File and Directory Management](#file-and-directory-management)
+- [Exit Commands](#exit-commands)
+- [File and Directory Management](#file-and-directory)
 - [File Viewing and Manipulation](#file-viewing-and-manipulation)
 - [Redirection](#redirection)
 
-## Common Commands
+## Exit Commands
 
 Commonly used exit/interrupt commands. 
 
 - `ctrl + c`: Halt current process and return to new command line.
 - `quit`/`exit`/`logout`: Depends on context, will end current shell or session.
 
-## File and Directory Management
+## File and Directory Basics
 
 Commands for navigating and managing files and directories.
 
@@ -29,7 +29,7 @@ Commands for navigating and managing files and directories.
 - `cp`: Copy. Including all contents (-r).
 - `mv`: Move/rename.  
 
-## File Viewing and Manipulation
+## File Viewing and Editing
 
 Commands for viewing and manipulating file contents.
 
@@ -38,6 +38,7 @@ Commands for viewing and manipulating file contents.
 - `head <file>`: Outputs first 10 lines of file.
 - `tail <file>`: Outputs last 10 lines of file.
 - `find`: Search. By file name (-name) or type (-type).
+- `nano`: Edit file. Requires nano installed.
 
 ## Redirection
 
