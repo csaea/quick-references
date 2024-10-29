@@ -1,2 +1,2 @@
-# quick-references
-quick reference material for CSAEA courses
+# Quick References
+Quick reference material for CSAEA courses.
