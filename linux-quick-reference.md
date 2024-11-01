@@ -48,3 +48,7 @@ Commands for redirecting input and output.
   ```ex. echo "Hello, World!" > hello.txt```
 - `>>`: Append the output of a command into a file.  
   ```ex. echo "Another line" >> hello.txt```
+
+  ----
+
+  *Created by Mr Harrell*
