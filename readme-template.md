@@ -5,6 +5,16 @@ Pick and choose whatever you want from the below template. No need to use everyt
 
 > *Your README reflects the quality of your software — make it shine!*
 
+## 📚 Table of Contents
+
+1. [🌟 Features](#-features)
+2. [📜 Overview](#-overview)
+3. [👨‍💻 Authors](#-authors)
+4. [💻 Code Example](#-code-example)
+5. [📦 Installation](#-installation)
+   - [🛠 Requirements](#-requirements)
+6. [🤝 Feedback and Contributing](#-feedback-and-contributing)
+
 ## 🌟 Features
 
 *Key highlights of your program. Keep it brief!*
