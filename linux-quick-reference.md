@@ -1,6 +1,6 @@
 # **Linux Quick Reference**
 
-Quick reference for Linux fundamentals.
+Quick reference for Linux fundamentals. For more info about Linux commands, I suggest [this](https://ss64.com/bash/) resource.
 
 ## Table of Contents
 - [Exit Commands](#exit-commands)
@@ -38,16 +38,27 @@ Commands for viewing and manipulating file contents.
 - `head <file>`: Outputs first 10 lines of file.
 - `tail <file>`: Outputs last 10 lines of file.
 - `find`: Search. By file name (-name) or type (-type).
-- `nano`: Edit file. Requires nano installed.
+- `open <file>`: Opens file outside terminal.
+- `nano <file>`: Edit file. Requires nano installed.
 
 ## Redirection
 
 Commands for redirecting input and output.
 
+Sure! Here’s the information in your format:
+
+### Commands for Redirecting Input and Output
+
 - `>`: Direct output of a command into a file.  
   ```ex. echo "Hello, World!" > hello.txt```
 - `>>`: Append the output of a command into a file.  
   ```ex. echo "Another line" >> hello.txt```
+- `<`: Direct input from a file to a command.  
+  ```ex. sort < unsorted.txt```
+- `|`: Pipe the output of one command as input to another command.  
+  ```ex. ls -l | grep "txt"```
+
+Feel free to adjust anything further!
 
   ----
 
