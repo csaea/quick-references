@@ -7,13 +7,13 @@ Pick and choose whatever you want from the below template. No need to use everyt
 
 ## 📚 Table of Contents
 
-1. [🌟 Features](#-features)
-2. [📜 Overview](#-overview)
-3. [👨‍💻 Authors](#-authors)
-4. [💻 Code Example](#-code-example)
-5. [📦 Installation](#-installation)
+🌟 [Features](#-features)
+📜 [Overview](#-overview)
+👨‍💻 [Authors](#-authors)
+💻 [Code Example](#-code-example)
+📦 [Installation](#-installation)
    - [🛠 Requirements](#-requirements)
-6. [🤝 Feedback and Contributing](#-feedback-and-contributing)
+🤝Feedback and Contributing](#-feedback-and-contributing)
 
 ## 🌟 Features
 
