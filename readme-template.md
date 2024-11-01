@@ -13,7 +13,7 @@ Pick and choose whatever you want from the below template. No need to use everyt
 - 💻 [Code Example](#-code-example)
 - 📦 [Installation](#-installation)
    - [🛠 Requirements](#-requirements)
-- 🤝Feedback and Contributing](#-feedback-and-contributing)
+- 🤝Feedback and Contributing](#feedback-and-contributing)
 
 ## 🌟 Features
 
