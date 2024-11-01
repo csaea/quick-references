@@ -7,6 +7,7 @@ Quick reference for Linux fundamentals. For more info about Linux commands, I su
 - [File and Directory Management](#file-and-directory)
 - [File Viewing and Manipulation](#file-viewing-and-manipulation)
 - [Redirection](#redirection)
+- [Common Options](#common-options)
 
 ## Exit Commands
 
@@ -23,7 +24,8 @@ Commands for navigating and managing files and directories.
 - `pwd`: Print Working Directory. Displays path of current directory.  
 - `cd <directory>`: Change Directory to specified path.  
 - `cd ..`: Return to previous or parent directory.  
-- `mkdir <directory>`: Make new directory.  
+- `mkdir <directory>`: Make new directory.
+- `rmdir <directory>`: Delete directory
 - `touch <file>`: Create new file.
 - `rm`: Remove file. Including all contents (-r) and forced (-f).
 - `cp`: Copy. Including all contents (-r).
@@ -58,7 +60,25 @@ Sure! Here’s the information in your format:
 - `|`: Pipe the output of one command as input to another command.  
   ```ex. ls -l | grep "txt"```
 
-Feel free to adjust anything further!
+## Common Options 
+
+Got it! Here’s the list of common Linux options without examples:
+
+### Common Linux Options
+
+- **`-h`**: Help.
+- **`-v`**: Verbose. Displays more details.
+- **`-f`**: Force action without confirmation.
+- **`-r`**: Recursive. Applys command to all contents in a directory.
+- **`-l`**: Listing format (long).
+- **`-a`**: Include hidden files.
+- **`-t`**: Time. Sort by last modified. 
+- **`-s`**: Display size of files in blocks.
+- **`-C`**: Display output in columns.
+- **`-d`**: Show directory information instead of contents.
+- **`-q`**: Suppress warnings or other non-critical output.
+- **`-n`**: Numerical user and group IDs instead of names.
+- **`--version`**: Show version information for a command.
 
   ----
 
