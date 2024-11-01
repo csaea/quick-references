@@ -32,8 +32,6 @@ A brief introduction about yourself, along with a link to your [GitHub](https://
 'Oh yeah!'
 ```
 
-Sure! Here’s a super concise installation section:
-
 ## 📦 Installation
 
 1. **Fork the repo** on GitHub.
