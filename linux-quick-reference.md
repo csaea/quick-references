@@ -1,12 +1,15 @@
 # **Linux Quick Reference**
 
-Quick reference for Linux fundamentals. For more info about Linux commands, I suggest [this](https://ss64.com/bash/) resource.
+Quick reference for Linux fundamentals.
 
 ## Table of Contents
 - [Exit Commands](#exit-commands)
-- [File and Directory Management](#file-and-directory)
-- [File Viewing and Manipulation](#file-viewing-and-manipulation)
-- [Redirection](#redirection)
+- [File and Directory Management](#file-and-directory-management)
+- [File Viewing and Editing](#file-viewing-and-editing)
+- [Output and Redirection](#output-and-redirection)
+- [Search and Pattern Matching](#search-and-pattern-matching)
+- [Network Utilities](#network-utilities)
+- [Loops](#loops)
 - [Common Options](#common-options)
 
 ## Exit Commands
@@ -131,4 +134,4 @@ Common Options
 
   ----
 
-  *Created by Mr Harrell*
+  *Created by Mr Harrell*  For more info about Linux commands, I suggest [this](https://ss64.com/bash/) resource.
