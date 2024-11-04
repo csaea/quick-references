@@ -100,9 +100,12 @@ for variable in items; do
     {code block}
 done
 ```
-
-For example, the following code loops over every .txt file in the my_documents directory, runs `cat` on every file, redirecting the output to a new text file. 
+#### Example
 ```
+# The following code 
+# 1) loops over every .txt file in the my_documents directory
+# 2) runs `cat` on every file, redirecting the output to a new text file.
+
 for file in my_documents/*.txt; do
     cat "$file" >> output.txt
 done
