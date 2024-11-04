@@ -62,7 +62,7 @@ Commands for output to terminal, and redirecting input and output.
 ### grep
 - `grep`: Global Regular Expression Print. Filter text with regex. -i (case-insenstive) -c (count)
   
-#### grep examples:
+#### Examples:
 ```bash
 # search for word "error" in file:
 grep "error" logfile.txt
@@ -74,6 +74,7 @@ grep -c "success" logfile.txt
 ### awk
 - `awk`: As a command `awk` filters, processes, analyzes text in files, for pattern-matching, field manipulation, and user-defined outputs.
 *Works best with structured text files, like .csv, log files, etc.*
+#### Examples
 ```bash
 # Print first field of file (by default fields are seaparted by a space): 
 awk '{print $1}' data.txt
