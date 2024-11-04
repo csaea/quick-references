@@ -43,14 +43,11 @@ Commands for viewing and manipulating file contents.
 - `open <file>`: Opens file outside terminal.
 - `nano <file>`: Edit file. Requires nano installed.
 
-## Redirection
+## Output and Redirection
 
-Commands for redirecting input and output.
+Commands for output to terminal, and redirecting input and output.
 
-Sure! Here’s the information in your format:
-
-### Commands for Redirecting Input and Output
-
+- `echo`: display message or variable value to terminal 
 - `>`: Direct output of a command into a file.  
   ```ex. echo "Hello, World!" > hello.txt```
 - `>>`: Append the output of a command into a file.  
@@ -60,11 +57,59 @@ Sure! Here’s the information in your format:
 - `|`: Pipe the output of one command as input to another command.  
   ```ex. ls -l | grep "txt"```
 
+## Search and Pattern Matching
+
+### grep
+- `grep`: Global Regular Expression Print. Filter text with regex. -i (case-insenstive) -c (count)
+  
+#### grep examples:
+```bash
+# search for word "error" in file:
+grep "error" logfile.txt
+
+# count how many occurences of word "success" in file:
+grep -c "success" logfile.txt
+```
+
+### awk
+- `awk`: As a command `awk` filters, processes, analyzes text in files, for pattern-matching, field manipulation, and user-defined outputs.
+*Works best with structured text files, like .csv, log files, etc.*
+```bash
+# Print first field of file (by default fields are seaparted by a space): 
+awk '{print $1}' data.txt
+
+# Filter lines whose second column value is greater than 50 
+awk '$2 > 50' data.txt
+```
+
+## Network Utilities 
+
+- `ping`: Sends echo request to test/measure network connectivity of a host.
+- `curl`: Client for URL. Get or send data (or files) from url protocols. Powered by libcurl.
+- `wget`: Web Get. Download files from the web.
+- `ssh`: Secure shell to remote machine.
+
+## Loops 
+
+Loops are primarily used to process many files, and generate reports. 
+
+Loops follows the form:
+```bash
+for variable in items; do
+    {code block}
+done
+```
+
+For example, the following code loops over every .txt file in the my_documents directory, runs `cat` on every file, redirecting the output to a new text file. 
+```
+for file in my_documents/*.txt; do
+    cat "$file" >> output.txt
+done
+```
+
 ## Common Options 
 
-Got it! Here’s the list of common Linux options without examples:
-
-### Common Linux Options
+Common Options
 
 - **`-h`**: Help.
 - **`-v`**: Verbose. Displays more details.
