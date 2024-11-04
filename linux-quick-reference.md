@@ -4,7 +4,7 @@ Quick reference for Linux fundamentals.
 
 ## Table of Contents
 - [Exit Commands](#exit-commands)
-- [File and Directory Management](#file-and-directory-management)
+- [File and Directory Basics](#file-and-directory-basics)
 - [File Viewing and Editing](#file-viewing-and-editing)
 - [Output and Redirection](#output-and-redirection)
 - [Search and Pattern Matching](#search-and-pattern-matching)
