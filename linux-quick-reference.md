@@ -23,7 +23,7 @@ Quick reference for Linux fundamentals.
 - **`Up/Down Arrow`**: Cycle through command history.  
 - **`Ctrl + A`**: Move cursor to the beginning of the line.  
 - **`clear` or `Ctrl + L`**: Clear terminal screen.
-- **`man`**: displays **man**ual documentation for a command.
+- **`man`**: displays **man**ual documentation for a command. 
 - **`q`/`quit`/`exit`/`logout`**: End current shell or session, depending on context.
 
 ## File and Directory Basics
