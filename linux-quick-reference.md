@@ -3,7 +3,7 @@
 Quick reference for Linux fundamentals.
 
 ## Table of Contents
-- [Exit Commands](#exit-commands)
+- [Common Shortcuts and Commands](#common-shortcuts-and-commands)
 - [File and Directory Basics](#file-and-directory-basics)
 - [File Viewing and Editing](#file-viewing-and-editing)
 - [Output and Redirection](#output-and-redirection)
@@ -13,12 +13,21 @@ Quick reference for Linux fundamentals.
 - [Variables](#variables)
 - [Common Options](#common-options)
 
-## Exit Commands
 
-Commonly used exit/interrupt commands. 
+## Common Shortcuts and Commands
 
-- `ctrl + c`: Halt current process and return to new command line.
-- `quit`/`exit`/`logout`: Depends on context, will end current shell or session.
+- **`Ctrl + C`**: Terminate current process.  
+- **`Tab`**: Autocomplete file or command name.  
+- **`Up/Down Arrow`**: Cycle through command history.  
+- **`Ctrl + A`**: Move cursor to the beginning of the line.  
+- **`Ctrl + E`**: Move cursor to the end of the line.  
+- **`clear` or `Ctrl + L`**: Clear terminal screen.
+- **`Ctrl + R`**: Reverse search through command history.  
+- **`q`/`quit`/`exit`/`logout`**: End current shell or session, depending on context.
+
+---
+
+This list includes some of the most essential shortcuts for managing processes, navigation, and terminal history in Linux, plus a few more for working efficiently.
 
 ## File and Directory Basics
 
