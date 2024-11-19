@@ -95,17 +95,14 @@ for variable_name in directory/items; do
     {code block}
 done
 ```
-#### Example
+Example. The following code takes the content of every file in a directory and adds them into a single txt doc. 
 ```
-# The following code takes the content of every file in a directory and adds them into a single txt doc. 
 
 for file in my_documents/*.txt; do
     cat "$file" >> output.txt
 done
 ```
 ## Input
-
-## Accepting Input
 
 - **`read`**: Accept input and store in a variable.  
   ```bash
@@ -120,9 +117,8 @@ done
 ## Search and Pattern Matching
 
 ### grep
-- `grep`: Global Regular Expression Print. Filter text with regex. -i (case-insenstive) -c (count)
+- `grep`: Global Regular Expression Print. Search for specific patterns within text. Filter text with regex. -i (case-insenstive) -c (count)
   
-#### Examples:
 ```bash
 # search for word "error" in file:
 grep "error" logfile.txt
