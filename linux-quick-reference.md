@@ -22,14 +22,9 @@ Quick reference for Linux fundamentals.
 - **`Tab`**: Autocomplete file or command name.  
 - **`Up/Down Arrow`**: Cycle through command history.  
 - **`Ctrl + A`**: Move cursor to the beginning of the line.  
-- **`Ctrl + E`**: Move cursor to the end of the line.  
 - **`clear` or `Ctrl + L`**: Clear terminal screen.
-- **`Ctrl + R`**: Reverse search through command history.  
+- **`man`**: displays **man**ual documentation for a command.
 - **`q`/`quit`/`exit`/`logout`**: End current shell or session, depending on context.
-
----
-
-This list includes some of the most essential shortcuts for managing processes, navigation, and terminal history in Linux, plus a few more for working efficiently.
 
 ## File and Directory Basics
 
@@ -89,6 +84,7 @@ grep -c "success" logfile.txt
 ### awk
 - `awk`: As a command `awk` filters, processes, analyzes text in files, for pattern-matching, field manipulation, and user-defined outputs.
 *Works best with structured text files, like .csv, log files, etc.*
+
 #### Examples
 ```bash
 # Print first field of file (by default fields are seaparted by a space): 
@@ -111,13 +107,13 @@ Loops are primarily used to process many files, and generate reports.
 
 Loops follows the form:
 ```bash
-for variable in items; do
+for variable_name in directory/items; do
     {code block}
 done
 ```
 #### Example
 ```
-# The following code loops over every .txt file in the my_documents directory and runs `cat` on every file, redirecting the output to append to a txt file.
+# The following code takes the content of every file in a directory and adds them into a single txt doc. 
 
 for file in my_documents/*.txt; do
     cat "$file" >> output.txt
@@ -126,7 +122,7 @@ done
 
 ## Variables
 
-Variables are defined with a variable `name`, `=`, and `quotation marks` with no spaces between. Signle quotation marks for literal interpretation, double for dynamic substitution. 
+Variables are defined with a `variable name`, `=`, and `quotation marks` with no spaces between. Single quotation marks for literal interpretation, double for dynamic substitution. 
 
 - `$`: Used to reference the value of a variable.
 
@@ -135,17 +131,9 @@ Variables are defined with a variable `name`, `=`, and `quotation marks` with no
   echo $my_variable
   ```
 
-### Special Variables:
-
-- `$?`: Exit status of last command
-- `$$`: PID of current shell
-- `$0`: Script name
-- `$1`, `$2`, ...: Command-line arguments
-- `$#`: Number of arguments
-
 ### Environment Variables
 
-Built-in (predefined), uppercase variables containing info about the system. You can create custom env variables, too. 
+Built-in (predefined) variabless containing info about the system. Uppercase. You can create custom ENV variables, too. 
 
 - **`printenv`**: Display all environmental variables. 
 - **`$HOME`**: Current user's home directory.
@@ -170,14 +158,9 @@ Built-in (predefined), uppercase variables containing info about the system. You
   read -p "Enter your name: " name
   ```
 
-- **`$REPLY`**: Default variable for input if no name is given.  
-  ```bash
-  read  # Input goes to $REPLY
-  ```
-
 ## Scripts 
 
-Steps to creating and run a script
+Steps to create and run a script:
 
 1. **Create the script**:
    ```bash
@@ -202,7 +185,7 @@ Steps to creating and run a script
 
 ## Common Options 
 
-Common Options
+Common Options, often different depending on command. Type `man` then a command to receive a command's manual. 
 
 - **`-h`**: Help.
 - **`-v`**: Verbose. Displays more details.
