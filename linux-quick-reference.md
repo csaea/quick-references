@@ -1,6 +1,6 @@
-# **Linux Quick Reference**
+# **Bash Linux Quick Reference**
 
-Quick reference for Linux fundamentals.
+Quick reference for Bash/Linux commands. Bash (Bourne-Again Shell) is the default CLI shell on most Linux systems.
 
 ## Table of Contents
 - [Common Shortcuts and Commands](#common-shortcuts-and-commands)
@@ -171,22 +171,21 @@ Steps to create and run a script:
 
 ## Common Options 
 
-Common Options, often different depending on command. Type `man` then a command to receive a command's manual. 
+Options frequently used. Behavior varies depending on the specific command being used. Type `man <command>` to view the manual for each command.
 
-- **`-h`**: Help.
-- **`-v`**: Verbose. Displays more details.
-- **`-f`**: Force action without confirmation.
-- **`-r`**: Recursive. Applys command to all contents in a directory.
-- **`-l`**: Listing format (long).
-- **`-a`**: Include hidden files.
-- **`-t`**: Time. Sort by last modified. 
-- **`-s`**: Display size of files in blocks.
-- **`-C`**: Display output in columns.
-- **`-d`**: Show directory information instead of contents.
-- **`-q`**: Suppress warnings or other non-critical output.
-- **`-n`**: Numerical user and group IDs instead of names.
-- **`--version`**: Show version information for a command.
+- **`-h`**: Show help information (or human-readable sizes in some commands).
+- **`-v`**: Verbose mode (or version in some commands).
+- **`-f`**: Force action without confirmation (or overwrite).
+- **`-r`**: Recursive (or reverse).
+- **`-l`**: Long listing format.
+- **`-a`**: Include hidden files (or all files).
+- **`-t`**: Sort by modification time (or other criteria).
+- **`-s`**: Display size in blocks (or summary).
+- **`-C`**: Display count (or columns).
+- **`-d`**: Show directory info.
+- **`-q`**: Suppress warnings (or quiet mode).
+- **`-n`**: Display numerical user/group IDs (or specify number).
 
-  ----
+---
 
-  *Created by Mr Harrell*  For more info about Linux commands, I suggest [this](https://ss64.com/bash/) resource.
+  *Created by MD Harrell*  For more info about Linux commands, I suggest [this](https://ss64.com/bash/) resource.
