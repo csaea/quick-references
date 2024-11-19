@@ -11,6 +11,7 @@ Quick reference for Linux fundamentals.
 - [Network Utilities](#network-utilities)
 - [Loops](#loops)
 - [Variables](#variables)
+- [Input](#input)
 - [Common Options](#common-options)
 
 
@@ -153,6 +154,25 @@ Built-in (predefined), uppercase variables containing info about the system. You
 - **`$EDITOR`**: Default text editor (e.g., `nano`, `vim`).
 
 ---
+
+## Input
+
+## Accepting Input
+
+- **`read`**: Accept input and store in a variable.  
+  ```bash
+  read variable_name
+  ```
+
+- **`read -p`**: Prompt the user before input.  
+  ```bash
+  read -p "Enter your name: " name
+  ```
+
+- **`$REPLY`**: Default variable for input if no name is given.  
+  ```bash
+  read  # Input goes to $REPLY
+  ```
 
 ## Common Options 
 
