@@ -106,9 +106,7 @@ done
 ```
 #### Example
 ```
-# The following code 
-# 1) loops over every .txt file in the my_documents directory
-# 2) runs `cat` on every file, redirecting the output to a new text file.
+# The following code loops over every .txt file in the my_documents directory and runs `cat` on every file, redirecting the output to append to a txt file.
 
 for file in my_documents/*.txt; do
     cat "$file" >> output.txt
