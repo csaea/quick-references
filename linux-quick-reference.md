@@ -10,6 +10,7 @@ Quick reference for Linux fundamentals.
 - [Search and Pattern Matching](#search-and-pattern-matching)
 - [Network Utilities](#network-utilities)
 - [Loops](#loops)
+- [Variables](#variables)
 - [Common Options](#common-options)
 
 ## Exit Commands
@@ -113,6 +114,46 @@ for file in my_documents/*.txt; do
     cat "$file" >> output.txt
 done
 ```
+
+## Variables
+
+Variables allow you to store and use data in the shell.
+
+- **Define Variable**:  
+  ```bash
+  MY_VAR="Hello"
+  ```
+
+- **Print Variable**:  
+  ```bash
+  echo $MY_VAR
+  ```
+
+### Special Variables:
+- `$`: Used to reference the value of a variable.
+- `$?`: Exit status of last command
+- `$$`: PID of current shell
+- `$0`: Script name
+- `$1`, `$2`, ...: Command-line arguments
+- `$#`: Number of arguments
+
+### Environment Variables
+
+Environmental variables are built-in variables containing info about the system. You can create custom env variables, too. 
+
+- **`printenv`**: Display all environmental variables. 
+- **`$HOME`**: Current user's home directory.
+- **`$USER`**: Current logged-in username.
+- **`$PATH`**: Directories to search for executable files.
+- **`$PWD`**: Current working directory.
+- **`$SHELL`**: Path to the current shell (e.g., `/bin/bash`).
+- **`$LANG`**: Current system language/locale setting.
+- **`$TERM`**: Type of terminal in use (e.g., `xterm`).
+- **`$LOGNAME`**: Current logged-in username (same as `$USER`).
+- **`$HOME`**: User’s home directory (same as `$USER`).
+- **`$EDITOR`**: Default text editor (e.g., `nano`, `vim`).
+
+---
 
 ## Common Options 
 
