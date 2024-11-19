@@ -7,11 +7,11 @@ Quick reference for Linux fundamentals.
 - [File and Directory Basics](#file-and-directory-basics)
 - [File Viewing and Editing](#file-viewing-and-editing)
 - [Output and Redirection](#output-and-redirection)
-- [Search and Pattern Matching](#search-and-pattern-matching)
 - [Network Utilities](#network-utilities)
 - [Loops](#loops)
 - [Variables](#variables)
 - [Input](#input)
+- [Search and Pattern Matching](#search-and-pattern-matching)
 - [Scripts](#scripts)
 - [Common Options](#common-options)
 
@@ -67,6 +67,56 @@ Commands for output to terminal, and redirecting input and output.
 - `|`: Pipe the output of one command as input to another command.  
   ```ex. ls -l | grep "txt"```
 
+## Variables
+
+Variables are defined with a `variable name`, `=`, and `quotation marks` with no spaces between. Single quotation marks for literal interpretation, double for dynamic substitution. 
+
+- `$`: Used to reference the value of a variable.
+
+  ```bash
+  my_variable="Hello"
+  echo $my_variable
+  ```
+
+## Network Utilities 
+
+- `ping`: Sends echo request to test/measure network connectivity of a host.
+- `curl`: Client for URL. Get or send data (or files) from url protocols. Powered by libcurl.
+- `wget`: Web Get. Download files from the web.
+- `ssh`: Secure shell to remote machine.
+
+## Loops 
+
+Loops are primarily used to process many files, and generate reports. 
+
+Loops follow the form:
+```bash
+for variable_name in directory/items; do
+    {code block}
+done
+```
+#### Example
+```
+# The following code takes the content of every file in a directory and adds them into a single txt doc. 
+
+for file in my_documents/*.txt; do
+    cat "$file" >> output.txt
+done
+```
+## Input
+
+## Accepting Input
+
+- **`read`**: Accept input and store in a variable.  
+  ```bash
+  read variable_name
+  ```
+
+- **`read -p`**: Prompt the user before input.  
+  ```bash
+  read -p "Enter your name: " name
+  ```
+
 ## Search and Pattern Matching
 
 ### grep
@@ -93,70 +143,6 @@ awk '{print $1}' data.txt
 # Filter lines whose second column value is greater than 50 
 awk '$2 > 50' data.txt
 ```
-
-## Network Utilities 
-
-- `ping`: Sends echo request to test/measure network connectivity of a host.
-- `curl`: Client for URL. Get or send data (or files) from url protocols. Powered by libcurl.
-- `wget`: Web Get. Download files from the web.
-- `ssh`: Secure shell to remote machine.
-
-## Loops 
-
-Loops are primarily used to process many files, and generate reports. 
-
-Loops follows the form:
-```bash
-for variable_name in directory/items; do
-    {code block}
-done
-```
-#### Example
-```
-# The following code takes the content of every file in a directory and adds them into a single txt doc. 
-
-for file in my_documents/*.txt; do
-    cat "$file" >> output.txt
-done
-```
-
-## Variables
-
-Variables are defined with a `variable name`, `=`, and `quotation marks` with no spaces between. Single quotation marks for literal interpretation, double for dynamic substitution. 
-
-- `$`: Used to reference the value of a variable.
-
-  ```bash
-  my_variable="Hello"
-  echo $my_variable
-  ```
-
-### Environment Variables
-
-Built-in (predefined) variabless containing info about the system. Uppercase. You can create custom ENV variables, too. 
-
-- **`printenv`**: Display all environmental variables. 
-- **`$HOME`**: Current user's home directory.
-- **`$USER`**: Current logged-in username.
-- **`$PATH`**: Directories to search for executable files.
-- **`$PWD`**: Current working directory.
-- **`$EDITOR`**: Default text editor (e.g., `nano`, `vim`).
-
----
-
-## Input
-
-## Accepting Input
-
-- **`read`**: Accept input and store in a variable.  
-  ```bash
-  read variable_name
-  ```
-
-- **`read -p`**: Prompt the user before input.  
-  ```bash
-  read -p "Enter your name: " name
-  ```
 
 ## Scripts 
 
