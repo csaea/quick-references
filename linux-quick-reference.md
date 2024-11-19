@@ -200,10 +200,6 @@ Steps to creating and run a script
    ./myscript.sh
    ```
 
---- 
-
-This is the simplest way to create and run a script in Linux!
-
 ## Common Options 
 
 Common Options
