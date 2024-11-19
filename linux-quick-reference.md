@@ -12,6 +12,7 @@ Quick reference for Linux fundamentals.
 - [Loops](#loops)
 - [Variables](#variables)
 - [Input](#input)
+- [Scripts](#scripts)
 - [Common Options](#common-options)
 
 
@@ -173,6 +174,35 @@ Built-in (predefined), uppercase variables containing info about the system. You
   ```bash
   read  # Input goes to $REPLY
   ```
+
+## Scripts 
+
+Steps to creating and run a script
+
+1. **Create the script**:
+   ```bash
+   nano myscript.sh
+   ```
+
+2. **Write the script** (e.g., add `echo "Hello, World!"`).
+
+3. **Save and exit in nano**:
+   - Press `Ctrl + O` to save.
+   - Press `Ctrl + X` to exit.
+
+4. **Make it executable**:
+   ```bash
+   chmod +x myscript.sh
+   ```
+
+5. **Run the script**:
+   ```bash
+   ./myscript.sh
+   ```
+
+--- 
+
+This is the simplest way to create and run a script in Linux!
 
 ## Common Options 
 
