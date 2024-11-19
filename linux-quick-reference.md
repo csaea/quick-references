@@ -117,20 +117,17 @@ done
 
 ## Variables
 
-Variables allow you to store and use data in the shell.
+Variables are defined with a variable `name`, `=`, and `quotation marks` with no spaces between. Signle quotation marks for literal interpretation, double for dynamic substitution. 
 
-- **Define Variable**:  
-  ```bash
-  MY_VAR="Hello"
-  ```
+- `$`: Used to reference the value of a variable.
 
-- **Print Variable**:  
   ```bash
-  echo $MY_VAR
+  my_variable="Hello"
+  echo $my_variable
   ```
 
 ### Special Variables:
-- `$`: Used to reference the value of a variable.
+
 - `$?`: Exit status of last command
 - `$$`: PID of current shell
 - `$0`: Script name
@@ -139,18 +136,13 @@ Variables allow you to store and use data in the shell.
 
 ### Environment Variables
 
-Environmental variables are built-in variables containing info about the system. You can create custom env variables, too. 
+Built-in (predefined), uppercase variables containing info about the system. You can create custom env variables, too. 
 
 - **`printenv`**: Display all environmental variables. 
 - **`$HOME`**: Current user's home directory.
 - **`$USER`**: Current logged-in username.
 - **`$PATH`**: Directories to search for executable files.
 - **`$PWD`**: Current working directory.
-- **`$SHELL`**: Path to the current shell (e.g., `/bin/bash`).
-- **`$LANG`**: Current system language/locale setting.
-- **`$TERM`**: Type of terminal in use (e.g., `xterm`).
-- **`$LOGNAME`**: Current logged-in username (same as `$USER`).
-- **`$HOME`**: User’s home directory (same as `$USER`).
 - **`$EDITOR`**: Default text editor (e.g., `nano`, `vim`).
 
 ---
