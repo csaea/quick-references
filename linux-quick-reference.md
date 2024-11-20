@@ -1,4 +1,4 @@
-# **Bash Linux Quick Reference**
+# **Bash/Linux Quick Reference**
 
 Quick reference for Bash/Linux commands. Bash (Bourne-Again Shell) is the default CLI shell on most Linux systems.
 
