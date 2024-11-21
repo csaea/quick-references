@@ -38,9 +38,9 @@ Commands for navigating and managing files and directories.
 - `mkdir <directory>`: Make new directory.
 - `rmdir <directory>`: Delete directory
 - `touch <file>`: Create new file.
-- `rm`: Remove file. Including all contents (-r) and forced (-f).
-- `cp`: Copy. Including all contents (-r).
-- `mv`: Move/rename.  
+- `rm <file>`: Remove file. Including all contents (-r) and forced (-f).
+- `cp <file> <directory>`: Copy. Including all contents (-r).
+- `mv <file> <new dir to move/same dir to rename>`: Move/rename.  
 
 ## File Viewing and Editing
 
