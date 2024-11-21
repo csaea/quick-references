@@ -42,7 +42,8 @@ Commands for navigating and managing files and directories.
 - `touch <file>`: Create new file.
 - `rm <file>`: Remove file. Including all contents (-r) and forced (-f).
 - `cp <file> <directory>`: Copy. Including all contents (-r).
-- `mv <file> <new dir to move/same dir to rename>`: Move/rename.  
+- `mv <file> <new dir to move/same dir to rename>`: Move/rename.
+- `date`: Retrieves date. 
 
 ## File Viewing and Editing
 
@@ -72,14 +73,15 @@ Commands for output to terminal, and redirecting input and output.
 
 ## Variables
 
-Variables are defined with a `variable name`, `=`, and `quotation marks` with no spaces between. Single quotation marks for literal interpretation, double for dynamic substitution. 
+Variables are defined with a `variable name`, `=`, and `quotation marks` with no spaces between.  
 
 - `$`: Used to reference the value of a variable.
 
-  ```bash
-  my_variable="Hello"
-  echo $my_variable
-  ```
+```bash
+ my_variable="Hello World"
+ echo "$my_variable"    # With quotes - includes space and preserse content exactly.
+ echo $my_variable      # Without quotes - may interpret space as a new argument!
+ ```
 
 ## Network Utilities 
 
