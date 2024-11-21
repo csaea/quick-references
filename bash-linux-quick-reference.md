@@ -209,6 +209,7 @@ Steps to create and run a script:
 
 3. **Save and exit in nano**:
    - Press `Ctrl + O` to save.
+   - Enter or confirm file name.
    - Press `Ctrl + X` to exit.
 
 4. **Make it executable**:
