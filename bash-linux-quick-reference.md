@@ -8,14 +8,16 @@ Quick reference for Bash/Linux commands. Bash (Bourne-Again Shell) is the defaul
 - [File and Directory Basics](#file-and-directory-basics)
 - [File Viewing and Editing](#file-viewing-and-editing)
 - [Output and Redirection](#output-and-redirection)
-- [Network Utilities](#network-utilities)
-- [Loops](#loops)
 - [Variables](#variables)
+- [Loops](#loops)
+- [Conditionals](#conditionals)
 - [Input](#input)
 - [Search and Pattern Matching](#search-and-pattern-matching)
+- [Network Utilities](#network-utilities)
 - [Scripts](#scripts)
 - [Common Options](#common-options)
 
+---
 
 ## Common Shortcuts and Commands
 
@@ -103,6 +105,46 @@ for file in my_documents/*.txt; do
     cat "$file" >> output.txt
 done
 ```
+
+## Conditionals
+
+### `if` Statement
+
+Executes commands if a condition is true. It can be used with or without else statements.
+
+**Syntax**:
+```bash
+if [ condition ]; then
+    # commands
+else
+    # commands
+fi
+
+```
+
+**Example**:
+```bash
+if [ -f "file.txt" ]; then
+    echo "File exists!"
+else
+    echo "File does not exist."
+fi
+
+```
+
+### `&&` (AND) and `||` (OR)
+
+- `&&`: Run the second command if the first succeeds.
+- `||`: Run the second command if the first fails.
+
+**Examples**:
+```bash
+mkdir dir && cd dir
+mkdir dir || echo "Exists"
+```
+
+---
+
 ## Input
 
 - **`read`**: Accept input and store in a variable.  
