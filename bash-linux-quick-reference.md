@@ -83,6 +83,18 @@ Variables are defined with a `variable name`, `=`, and `quotation marks` with no
  echo $my_variable      # Without quotes - may interpret space as a new argument!
  ```
 
+### Variable Substitution 
+
+When you want to include a variable or command in a string, use `$` or `$(...)`.
+
+```bash
+name="Alice"
+echo "Hello, $name!"  # Output: Hello, Alice!
+
+echo "Today's date is: $(date)"  # Output: Today's date is: Wed Nov 21 12:30:00 PST 2024
+
+```
+
 ## Network Utilities 
 
 - `ping`: Sends echo request to test/measure network connectivity of a host.
@@ -102,7 +114,6 @@ done
 ```
 Example. The following code takes the content of every file in a directory and adds them into a single txt doc. 
 ```
-
 for file in my_documents/*.txt; do
     cat "$file" >> output.txt
 done
