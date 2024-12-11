@@ -56,8 +56,9 @@ Functions always have parentheses immediately after their names. Python includes
 - `range(x)`: Returns a sequence of numbers.
 - `enumerate()`: Returns both the index and the value of items in an iterable.
 - `int()`, `str()`, `float()`: Converts to data type.
-- `list()`: Converts an iterable to a list.
+- `list()`: Converts a collection of items into a list.
 - `keys()`, `values()`: Returns the key or value of a dictionary entry.
+- `bin()`: Convert decimal to binary. 
 - `ord()`: Returns Unicode/ASCII integer of character. 
 
 Some functions can take in many **arguments** (denoted by x, y, z). Any values that goes inside the parentheses is called an **argument**. Multiple arguments are separated by a comma:
@@ -292,23 +293,19 @@ for letter in letters:
 ## List Functions 
 
 - **`append()`**: Adds value to end of the list.  
-  Example: `letters.append("m")`  
-  The list now becomes `["a", "z", "d", "m"]`
+  Example: `letters.append("m")` => `["a", "z", "d", "m"]`
 - **`pop(index)`**: Removes and returns value at last (or specified) index.  
-  Example: `last_letter = letters.pop()`  
-  Returns: `"m"` (previous list becomes `["a", "z", "d"]`)
-- **`sort()`**: Sorts the list in ascending order (modifies the list in place).  
-  Example: `letters.sort()`  
-  The list now becomes `["a", "d", "z"]`
+  Example: `last_letter = letters.pop()` returns: `"m"` and list becomes `["a", "z", "d"]`
+- **`sort()`**: Sorts a list in ascending order (modifies the list in place).  
+  Example: `letters.sort()` => `["a", "d", "z"]`
+- **`sorted()`**: Converts a non-list collection of items into a sorted list.
+  Example: `sorted("b", "d", "c". "a")`
 - **`reverse()`**: Reverses the order of the list in place.
-  Example: `letters.reverse()`  
-  The list now becomes `["z", "d", "a"]`
+  Example: `letters.reverse()` => `["z", "d", "a"]`
 - **`insert(index, value)`**: Inserts a value at a specified index.  
-  Example: `letters.insert(1, "b")`  
-  The list now becomes `["a", "b", "z", "d"]`
+  Example: `letters.insert(1, "b")` => `["a", "b", "z", "d"]`
 - **`index(value)`**: Returns the index of the first occurrence of a specified value.  
-  Example: `z_index = letters.index("z")`  
-  Returns: `1`
+  Example: `z_index = letters.index("z")` => Returns: `1`
 
 ## List Comprehension
 
