@@ -1,6 +1,6 @@
 # **Python Quick Reference**
 
-Quick reference for Python fundamentals.
+Quick reference for Python fundamentals. For more detailed documentation, I suggest w3schools [here](https://www.w3schools.com/python/default.asp).
 
 ## Table of Contents
 - [Data Types](#data-types)
@@ -49,13 +49,14 @@ Each example includes a **variable name** on the left, the **operator** (`=`), a
 ## Functions
 
 ### Built-in Functions
-Functions always have parentheses immediately after their names. Python includes many **built-in functions**. Their names are reserved keywords. Here are some common ones:
+Functions always have parentheses immediately after their names. Python includes many **built-in functions** that may be used for certain cases. Their names are reserved keywords. Note they won't work for *every* data type or structure. Here common ones:
 
 - `print("x:",y)`: Prints to the console (but does not return anything).
 - `input("x")`: Accepts user input.
 - `max(x,y)`, `min(x,y)`: Returns maximum or minimum value from a list.
 - `len(x)`: Returns the length of a string or list.
 - `range(x)`: Returns a sequence of numbers.
+- `count()`: Returns occurance of element.
 - `enumerate()`: Returns both the index and the value of items in an iterable.
 - `int()`, `str()`, `float()`: Converts to data type.
 - `list()`: Converts a collection of items into a list.
@@ -83,23 +84,24 @@ def custom_adder(x,y):
     print(x + y) 
 
 custom_adder(4,6) # Prints 10
+custom_adder(2,2) # Prints 4
 ```
 
 ## Math Operators
 
 Various mathematical operations use these common operators:
 
-`+`: Addition; 3 + 2 results in 5
-`-`: Subtraction; 5 - 2 results in 3
-`*`: Multiplication; 4 * 3 results in 12
-`/`: Division; 5 / 2 results in a float 2.5
-`//`: Floor (Rounded Down) Division; 5 // 2 results rounded down to 2
-`%`: Modulus; 10 % 3 results in the remainder 1
-`**`: Exponentiation; 2 ** 3 results in 8
+`+`: Addition. 3 + 2 returns 5
+`-`: Subtraction. 5 - 2 returns 3
+`*`: Multiplication. 4 * 3 returns 12
+`/`: Division; 5 / 2 returns a float 2.5
+`//`: Floor Division. 5 // 2 rounds down to 2
+`%`: Modulus. 10 % 3 returns remainder 1
+`**`: Exponentiation (Power). 2 ** 3 returns 8
 
 And don't forget built-in libraries!
 
-- **Random Library**: imports a PRNG (pseudorandom number generator) library of many built-in functions.
+- **Random Library**: imports a PRNG (pseudorandom number generator) library with many built-in functions.
 
 ```python
 import random
@@ -110,7 +112,7 @@ random_float_range = random.uniform(1.0, 10.0)  # Example: 5.678
 random_choice = random.choice(['apple', 'banana', 'cherry'])  # Example: 'banana'
 my_list = [1, 2, 3, 4, 5]
 random.shuffle(my_list)  # List might be shuffled to [3, 1, 5, 2, 4]
-
+random.sample(my_list, k) # returns multiple (k) unique values from my_list.  
 ```
 
 - **Math Library**: import built-in mathematical functions beyond basic operations.
@@ -129,15 +131,14 @@ factorial_value = math.factorial(5)  # Returns 120
 
 ### f-string Formatting 
 
-F-strings are "formatted strings". Add the letter 'f' right before a string to let it take in dynamic variables or expressions, enclosed in braces {}. 
+F-strings are "formatted strings". Add the letter 'f' right before a string to let it take in dynamic variables or expressions, enclosed in braces `{}`. 
 
 ```python
 food = "taco"
 price = 5
 
-## enclose your variable within the {} to display value
 print(f"This {food} costs {price} dollars!?")
-# Returns => This taco costs 5 dollars!?
+# => This taco costs 5 dollars!?
 ```
 
 ### String Concatenation
@@ -148,15 +149,15 @@ Concatenate strings with a plus sign.
 string1 = "Hello"
 string2 = "World"
 
-print(string1 + " " + string2 + "!")
+print(string1 + " " + string2 + "!!!")
 
-# Prints Hello World! 
+# Prints Hello World!!! 
 ```
 
 Note that the plus sign does not add strings together, even if they are numbers. 
 
 ```python
-#integer datatype:
+#integer data type:
 2 + 2 + 6 = 10
 
 #string data type: 
@@ -183,7 +184,7 @@ substring7 = string[1:8:2]  # => "bdfh" (every second character from index 1 to 
 
 ### String Functions
 
-Various functions used to manipulate strings. Look up documentation for various uses and options. 
+Various functions used to manipulate strings (and occasionally other iterables, like lists and tuples). Look up documentation for various uses and options. 
 
 - `capitalize()`: Capitalizes word in string.
 - `count()`: Counts occurance.
@@ -286,7 +287,7 @@ print(letters[2])
 
 for letter in letters:
     print(letter.upper())
-# Print statement displays letters in uppercase:
+# Permanently modifies original list:
 # A
 # Z
 # D
@@ -294,20 +295,20 @@ for letter in letters:
 
 ### List Functions 
 
-- **`append()`**: Adds value to end of the list.  
-  Example: `letters.append("m")` => `["a", "z", "d", "m"]`
-- **`pop(index)`**: Removes and returns value at last (or specified) index.  
-  Example: `last_letter = letters.pop()` returns: `"m"` and list becomes `["a", "z", "d"]`
-- **`sort()`**: Sorts a list in ascending order (modifies the list in place).  
-  Example: `letters.sort()` => `["a", "d", "z"]`
-- **`sorted()`**: Converts a non-list collection of items into a sorted list.
-  Example: `sorted("b", "d", "c". "a")`
-- **`reverse()`**: Reverses the order of the list in place.
-  Example: `letters.reverse()` => `["z", "d", "a"]`
-- **`insert(index, value)`**: Inserts a value at a specified index.  
-  Example: `letters.insert(1, "b")` => `["a", "b", "z", "d"]`
-- **`index(value)`**: Returns the index of the first occurrence of a specified value.  
-  Example: `z_index = letters.index("z")` => Returns: `1`
+- `append()`: Adds value to end of the list.  
+  ex. `letters.append("m")` => `["a", "z", "d", "m"]`
+- `pop(index)`: Removes and returns value at last (or specified) index.  
+  ex. `last_letter = letters.pop()` returns: `"m"` and list becomes `["a", "z", "d"]`
+- `sort()`: Sorts a list in ascending order (modifies the list in place).  
+  ex. `letters.sort()` => `["a", "d", "z"]`
+- `sorted()`: Converts a non-list collection of items into a sorted list.
+  ex. `sorted("b", "d", "c". "a")`
+- `reverse()`: Reverses the order of the list in place.
+  ex. `letters.reverse()` => `["z", "d", "a"]`
+- `insert(index, value)`: Inserts a value at a specified index.  
+  ex. `letters.insert(1, "b")` => `["a", "b", "z", "d"]`
+- `index(value)`: Returns the index of the first occurrence of a specified value.  
+  ex. `z_index = letters.index("z")` => `1`
 
 ### List Comprehension
 
@@ -315,9 +316,7 @@ Creates new list by applying an expression to each item in an iterable.
 
 ```python
 whole_numbers = [n for n in range(5)]  # Results in: [0, 1, 2, 3, 4]
-
 squared_numbers = [n ** 2 for n in range(5)]  # Creates a list of squares: [0, 1, 4, 9, 16]
-
 even_squares = [n ** 2 for n in range(10) if n % 2 == 0]  # Results in: [0, 4, 16, 36, 64]
 ```
 
@@ -334,7 +333,7 @@ letters.append(z) # ERROR
 letters.pop() # ERRORR
 ```
 
-### Tuples functions
+### Tuple Functions
 
 Tuples do not have functions that modify them, but you may use basic built-in functions for counting and iteraation:
 - `tuple()`: convert a list into a tuple.
@@ -347,34 +346,34 @@ They are iterable, so you may use loops.
 A set is a mutable (chaneable), iterable, unordered collection of data enclosed in curly braces `{}`, with elements separated by commas. Set will only include unique elements, and no duplicates. Lists can contain numbers, strings, booleans, but they cannot contain other sets or lists).
 
 ```python
-my_set = {1, 3.14, "hello", (1, 2)}
+my_set = {1, 2, 3.14, "hello", (1, 2)}
 ```
 
-## Set functions and operations
+## Set Functions and Operations
+- `set()`: Convert an iterable into a unique set. Duplicates will be removed.
+- `add()`: adds an element to the set. (Unless it's already there).
+- `update()`: adds multiple elements to the set. This can be another set, list, tuple, or any iterable.
+- `remove()`: removes element from a list (not index).
 
-`add()`: adds an element to the set. (Unless it's already there).
-`update()`: adds multiple elements to the set. This can be another set, list, tuple, or any iterable.
-`remove()`: removes element from a list (not index).
-
-`union()`: compares multiple sets, returns new set of only unique elements. You can also use `|`.
+- `union()`: compares multiple sets, returns new set of only unique elements. You can also use `|`.
 ex. 
 ```python
-set1 = {"A", 2, 3}
-set2 = {3, 4, 5}
+set1 = {"a", "b", "c"}
+set2 = {"c", "d", "e"}
 ```
 ```python
 result = set1.union(set2)
-print(result)  # Output: {1, 2, 3, 4, 5}
+print(result)  # Output: {"a", "b", "c", "d", "e"}
 ```
-`intersection()`:  compares multiple sets, returns new set of only shared elements. You can also use `&`.
+- `intersection()`:  compares multiple sets, returns new set of only shared elements. You can also use `&`.
 ```python
 result = set1.intersection(set2)
-print(result)  # Output: {3}
+print(result)  # Output: {"c"}
 ```
-`difference()`: compares multiple sets, returns elements in first, but not second set. You can also use `-`.
+- `difference()`: compares multiple sets, returns elements in first, but not second set. You can also use `-`.
 ```python
 result = set1.difference(set2)
-print(result)  # Output: {1}
+print(result)  # Output: {"a", "b"}
 ```
 
 
