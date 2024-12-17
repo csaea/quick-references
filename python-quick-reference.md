@@ -335,9 +335,9 @@ letters.pop() # ERRORR
 ### Tuples functions
 
 Tuples do not have functions that modify them, but you may use basic built-in functions for counting and iteraation:
-`tuple()`: convert a list into a tuple.
-`count()`: count elements in tuple.
-`index()`: return index of first occurance of an element.
+- `tuple()`: convert a list into a tuple.
+- `count()`: count elements in tuple.
+- `index()`: return index of first occurance of an element.
 
 They are iterable, so you may use loops. 
 
