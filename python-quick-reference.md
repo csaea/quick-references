@@ -11,6 +11,8 @@ Quick reference for Python fundamentals.
 - [Boolean Operators](#boolean-operators)
 - [Iteration](#iteration)
 - [Lists](#lists)
+- [Tuples](#tuples)
+- [Sets](#sets)
 
 ## Data Types
 
