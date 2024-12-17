@@ -2,7 +2,7 @@
 
 Quick reference for Python fundamentals. 
 
-For more detailed documentation, use the dictionary from [W3 Schools](https://www.w3schools.com/python/default.asp), the official [Python Tutorial](https://docs.python.org/3/tutorial/index.html), and/ or [TutorialsPoint]([https://docs.python.org/3/tutorial/index.html](https://www.tutorialspoint.com/python/index.html).
+For more detailed documentation, use the dictionary from [W3 Schools](https://www.w3schools.com/python/default.asp), the official [Python Tutorial](https://docs.python.org/3/tutorial/index.html), and/ or [TutorialsPoint](https://docs.python.org/3/tutorial/index.html](https://www.tutorialspoint.com/python/index.html).
 
 ## Table of Contents
 - [Data Types](#data-types)
