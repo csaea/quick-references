@@ -351,30 +351,29 @@ A set is a mutable (chaneable), iterable, unordered collection of data enclosed 
 my_set = {1, 2, 3.14, "hello", (1, 2)}
 ```
 
-## Set Functions and Operations
+### Set Functions 
 - `set()`: Convert an iterable into a unique set. Duplicates will be removed.
 - `add()`: adds an element to the set. (Unless it's already there).
 - `update()`: adds multiple elements to the set. This can be another set, list, tuple, or any iterable.
 - `remove()`: removes element from a list (not index).
-
+### Set Operations
 - `union()`: compares multiple sets, returns new set of only unique elements. You can also use `|`.
-ex. 
 ```python
 set1 = {"a", "b", "c"}
 set2 = {"c", "d", "e"}
 ```
 ```python
-result = set1.union(set2)
+result = set1.union(set2) # Alternative syntax: set1 | set2
 print(result)  # Output: {"a", "b", "c", "d", "e"}
 ```
 - `intersection()`:  compares multiple sets, returns new set of only shared elements. You can also use `&`.
 ```python
-result = set1.intersection(set2)
+result = set1.intersection(set2) # Alternative syntax: set1 & set2
 print(result)  # Output: {"c"}
 ```
 - `difference()`: compares multiple sets, returns elements in first, but not second set. You can also use `-`.
 ```python
-result = set1.difference(set2)
+result = set1.difference(set2) Alternative syntax: set1 - set2
 print(result)  # Output: {"a", "b"}
 ```
 
