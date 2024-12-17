@@ -222,7 +222,7 @@ Various functions used to manipulate strings. Look up documentation for various 
 
 Iteration is when you repeat a set of instructions or steps multiple times, which helps you go through lists of items or perform tasks without writing the same code over and over again.
 
-## While Loops  
+### While Loops  
 
 Loops over iterable as long as a condition is True. Stops when the condition becomes False. 
 
@@ -238,7 +238,7 @@ print(counter)
 # Print statement returns 5 (not 4, since the counter increments until the condition becomes False).
 ```
 
-## For Loops
+### For Loops
 
 Loops over iterable for a set number of times..
 
@@ -273,8 +273,8 @@ for i in range(len(numbers)):
 # 2
 ```
 
-### Lists
-A list is a mutable (changeable), iterable collection of data enclosed in square brackets, with elements separated by commas. Lists can contain items of different data types, including numbers, strings, booleans, and even other lists.
+## Lists
+A list is a mutable (changeable), ordered, iterable collection of data enclosed in square brackets `[]`, with elements separated by commas. Lists can contain numbers, strings, booleans, and even other lists (nested lists).
 
 ```python
 letters = ["a", "z", "d"]
@@ -290,7 +290,7 @@ for letter in letters:
 # D
 ```
 
-## List Functions 
+### List Functions 
 
 - **`append()`**: Adds value to end of the list.  
   Example: `letters.append("m")` => `["a", "z", "d", "m"]`
@@ -307,7 +307,7 @@ for letter in letters:
 - **`index(value)`**: Returns the index of the first occurrence of a specified value.  
   Example: `z_index = letters.index("z")` => Returns: `1`
 
-## List Comprehension
+### List Comprehension
 
 Creates new list by applying an expression to each item in an iterable.
 
@@ -319,6 +319,61 @@ squared_numbers = [n ** 2 for n in range(5)]  # Creates a list of squares: [0, 1
 even_squares = [n ** 2 for n in range(10) if n % 2 == 0]  # Results in: [0, 4, 16, 36, 64]
 ```
 
+## Tuples 
+A tuple is an immutable (non-changeable), iterable, ordered collection of data enclosed in parenthesis `()`, with elements separated by commas. Due to their immutability, tuples are more memory effecient, thus faster than lists. They may contain any data type, as well as nested tuples. 
+
+```python
+letters = ("a", "z", "d")
+
+print(letters[2]) 
+# Displays "d", which is located at index 2
+
+letters.append(z) # ERROR
+letters.pop() # ERRORR
+```
+
+### Tuples functions
+
+Tuples do not have functions that modify them, but you may use basic built-in functions for counting and iteraation:
+`tuple()`: convert a list into a tuple.
+`count()`: count elements in tuple.
+`index()`: return index of first occurance of an element.
+
+They are iterable, so you may use loops. 
+
+## Sets 
+A set is a mutable (chaneable), iterable, unordered collection of data enclosed in curly braces `{}`, with elements separated by commas. Set will only include unique elements, and no duplicates. Lists can contain numbers, strings, booleans, but they cannot contain other sets or lists).
+
+```python
+my_set = {1, 3.14, "hello", (1, 2)}
+```
+
+## Set functions and operations
+
+`add()`: adds an element to the set. (Unless it's already there).
+`update()`: adds multiple elements to the set. This can be another set, list, tuple, or any iterable.
+`remove()`: removes element from a list (not index).
+
+`union()`: compares multiple sets, returns new set of only unique elements. You can also use `|`.
+ex. 
+```python
+set1 = {"A", 2, 3}
+set2 = {3, 4, 5}
+```
+```python
+result = set1.union(set2)
+print(result)  # Output: {1, 2, 3, 4, 5}
+```
+`intersection()`:  compares multiple sets, returns new set of only shared elements. You can also use `&`.
+```python
+result = set1.intersection(set2)
+print(result)  # Output: {3}
+```
+`difference()`: compares multiple sets, returns elements in first, but not second set. You can also use `-`.
+```python
+result = set1.difference(set2)
+print(result)  # Output: {1}
+```
 
 
 ### More to come as we continue learning Python in class
