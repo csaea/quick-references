@@ -1,6 +1,6 @@
 # **Python Quick Reference**
 
-Quick reference for Python fundamentals. For more detailed documentation, I suggest w3schools [here](https://www.w3schools.com/python/default.asp).
+Quick reference for Python fundamentals. For more detailed documentation, I suggest [W3 Schools](https://www.w3schools.com/python/default.asp).
 
 ## Table of Contents
 - [Data Types](#data-types)
