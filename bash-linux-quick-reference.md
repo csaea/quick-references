@@ -228,6 +228,7 @@ Options frequently used. Behavior varies depending on the specific command being
 
 - **`-h`**: Show help information (or human-readable sizes in some commands).
 - **`-v`**: Verbose mode (or version in some commands).
+- **`-i`**: Case insensitive (ignore case).
 - **`-f`**: Force action without confirmation (or overwrite).
 - **`-r`**: Recursive (or reverse).
 - **`-l`**: Long listing format.
