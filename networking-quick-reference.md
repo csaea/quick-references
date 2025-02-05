@@ -15,7 +15,7 @@ Recommended OS: Kali Linux
 - **`ifconfig`**: Display or configure network interfaces.  `ifconfig`
 - **`netstat`**: Show network connections and statistics.  `netstat -tuln`
 - **`nmap`**: Scan network for hosts and open ports.  `nmap <target>`
-- **`curl`**: Transfer data using protocols (HTTP, FTP).  `curl -I http://example.com`
+- **`curl`**: Transfer data to and from a server (HTTP, FTP).  `curl -I http://example.com`
 - **`traceroute`**: Trace packet path to a destination.  `traceroute <hostname or IP>`
 - **`route`**: View or modify the routing table.  `route -n`
 
