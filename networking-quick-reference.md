@@ -24,7 +24,7 @@ Recommended OS: Kali Linux
 ## Netcat Commands
 
 - **Listen on port**:  `nc -lvp 1234`
-- **Connect to a remote host**:  `nc <hostname or IP> 1234`
+- **Connect to host (chat, etc.)**:  `nc <hostname or IP> 1234`
 - **Banner grabbing**:  `nc <hostname or IP> 80`, then `GET / HTTP/1.1`, `Host: <hostname>`
 - **Send file**:  
   **Sender**:  `nc -lvp 1234 < file.txt`  
