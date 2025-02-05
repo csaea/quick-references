@@ -1,11 +1,10 @@
 # **Networking Commands - Linux Quick Reference**
+Recommended OS: Kali Linux
 
 ## Table of Contents
 - [Network Utilities](#network-utilities)
 - [Netcat Commands](#netcat-commands)
 - [Network Troubleshooting](#network-troubleshooting)
-
-Recommended OS: Kali Linux
 
 ---
 
