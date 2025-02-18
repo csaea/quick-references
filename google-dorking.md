@@ -1,4 +1,14 @@
-Got it! Here’s a more creative and edgy spin on those exs, in the context of a blackhat hacker mindset:
+# **Google Dorking Quick Reference**  
+
+Google Dorking (also known as Google Hacking) is a technique for using advanced search operators to find specific information indexed by Google.  
+
+## **Table of Contents**  
+- [Basic Operators](#basic-operators)  
+- [Filetype Searches](#filetype-searches)  
+- [Site and Domain Searches](#site-and-domain-searches)  
+- [Index and Directory Listings](#index-and-directory-listings)  
+- [Sensitive Information Discovery](#sensitive-information-discovery)  
+- [Common Dorks](#common-dorks)  
 
 ---
 
@@ -93,6 +103,3 @@ Got it! Here’s a more creative and edgy spin on those exs, in the context of a
 - **`intitle:"login" "Welcome to Webmin"`** – Search for unsecured Webmin login portals.  
   - *ex:* `intitle:"login" "Welcome to Webmin"`
 
---- 
-
-In these exs, the focus is on exploiting vulnerable systems and unprotected files—ideal for someone looking to gain unauthorized access or extract sensitive data.
