@@ -17,6 +17,16 @@ Google Dorking (also known as Google Hacking) is a technique for using advanced 
 - **`"my exact search term"`** – Narrow down to the exact phrase of interest.  
   - *ex:* `"confidential client database"`
 
+- **`OR` / `|`** – Combine multiple potential targets for bigger results.  
+  - *ex:* `"admin panel" OR "server config"`
+
+- **`"keyword1" AND "keyword2"`** – Require both keywords to appear in results, refining searches for specific contexts.  
+  - *ex:* `"database leak" AND "email passwords"`  
+  - *ex:* `"confidential report" AND site:.gov`  
+
+- **`-keyword`** – Exclude irrelevant stuff to narrow your results.  
+  - *ex:* `"SQL dump" -testing`
+
 - **`intitle:"keyword"`** – Hunt for specific keywords in titles, like admin panels.  
   - *ex:* `intitle:"admin login"`
 
@@ -24,13 +34,11 @@ Google Dorking (also known as Google Hacking) is a technique for using advanced 
   - *ex:* `inurl:"admin.php"`
 
 - **`intext:"keyword"`** – Look for juicy mentions within page content.  
-  - *ex:* `intext:"root password"`
+  - *ex:* `intext:"employee payroll"`
 
-- **`OR` / `|`** – Combine multiple potential targets for bigger results.  
-  - *ex:* `"admin panel" OR "server config"`
-
-- **`-keyword`** – exclude irrelevant stuff to narrow your results.  
-  - *ex:* `"SQL dump" -testing`
+- **`before:YYYY-MM-DD` / `after:YYYY-MM-DD`** – Restrict results to a specific timeframe.  
+  - *ex:* `"data breach report" after:2023-01-01`
+  - *ex:* `"financial records" before:2020-12-31`
 
 ---
 
@@ -39,11 +47,14 @@ Google Dorking (also known as Google Hacking) is a technique for using advanced 
 - **`filetype:pdf "keyword"`** – Find PDF reports or blueprints that expose info.  
   - *ex:* `filetype:pdf "network security blueprint"`
 
-- **`filetype:xls site:excom`** – Zero in on excel files on a specific site—could have financial data.  
-  - *ex:* `filetype:xls site:bankexcom`
+- **`filetype:xls site:ex.com`** – Zero in on Excel files on a specific site—could have financial data.  
+  - *ex:* `filetype:xls site:bankex.com`
 
 - **`filetype:docx confidential`** – Search for internal documents using Word files.  
   - *ex:* `filetype:docx confidential`
+
+- **`filetype:csv after:2022-01-01`** – Look for recent CSV files with potentially exposed data.  
+  - *ex:* `filetype:csv "email list" after:2023-06-01`
 
 ---
 
@@ -58,6 +69,9 @@ Google Dorking (also known as Google Hacking) is a technique for using advanced 
 - **`site:excom -inurl:www`** – Look for subdomains that could be poorly secured.  
   - *ex:* `site:excom -inurl:www`
 
+- **`site:edu filetype:pdf before:2022`** – Search for old research papers or university reports.  
+  - *ex:* `site:harvard.edu filetype:pdf before:2020`
+
 ---
 
 ## **Index and Directory Listings**
@@ -71,6 +85,9 @@ Google Dorking (also known as Google Hacking) is a technique for using advanced 
 - **`intitle:"index of" passwords`** – Find unsecured directories with passwords and sensitive data.  
   - *ex:* `intitle:"index of" passwords`
 
+- **`intitle:"index of" ext:zip after:2023-01-01`** – Look for recently exposed ZIP files.  
+  - *ex:* `intitle:"index of" ext:zip after:2023-06-01`
+
 ---
 
 ## **Sensitive Information Discovery**
@@ -81,11 +98,14 @@ Google Dorking (also known as Google Hacking) is a technique for using advanced 
 - **`ext:sql "password"`** – Hunt for SQL dumps with passwords or credentials.  
   - *ex:* `ext:sql "password" "dump"`
 
-- **`ext:env "DB_PASSWORD"`** – expose hidden `.env` files for database credentials.  
+- **`ext:env "DB_PASSWORD"`** – Expose hidden `.env` files for database credentials.  
   - *ex:* `ext:env "DB_PASSWORD"`
 
 - **`"Confidential" OR "Internal Use Only" filetype:pdf`** – Target internal files with restrictions.  
   - *ex:* `"Confidential" OR "Internal Use Only" filetype:pdf`
+
+- **`"site:drive.google.com" intext:password before:2022`** – Find old shared Google Drive links with sensitive info.  
+  - *ex:* `site:drive.google.com intext:password before:2022`
 
 ---
 
@@ -103,3 +123,5 @@ Google Dorking (also known as Google Hacking) is a technique for using advanced 
 - **`intitle:"login" "Welcome to Webmin"`** – Search for unsecured Webmin login portals.  
   - *ex:* `intitle:"login" "Welcome to Webmin"`
 
+- **`"database dump" filetype:sql after:2023-01-01`** – Search for recent SQL dumps with leaked credentials.  
+  - *ex:* `"database dump" filetype:sql after:2023-01-01`
