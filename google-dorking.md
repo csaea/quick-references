@@ -14,26 +14,26 @@ Google Dorking (also known as Google Hacking) is a technique for using advanced 
 
 ## **Basic Operators**
 
-- **`"my exact search term"`** – Narrow down to the exact phrase of interest.  
+- **`"my exact search term"`** – Search for an exact keyword or phrase. Forces Google to include it in the search.   
   - *ex:* `"confidential client database"`
 
-- **`OR` / `|`** – Combine multiple potential targets for bigger results.  
-  - *ex:* `"admin panel" OR "server config"`
+- **`OR` / `|`** – Include multiple possible keywords for more results.  
+  - *ex:* `"login" OR "logon" OR "log-in"`
 
-- **`"keyword1" AND "keyword2"`** – Require both keywords to appear in results, refining searches for specific contexts.  
+- **`"keyword1" AND "keyword2"`** – Require both keywords to appear in results.  
   - *ex:* `"database leak" AND "email passwords"`  
   - *ex:* `"confidential report" AND site:.gov`  
 
-- **`-keyword`** – Exclude irrelevant stuff to narrow your results.  
-  - *ex:* `"SQL dump" -testing`
+- **`-keyword`** – Exclude certain keywords, sites, etc., to narrow your results.  
+  - *ex1:* `"SQL dump" -testing` - *ex2:* `"snapchat law" -site:snapchat.com`
 
-- **`intitle:"keyword"`** – Hunt for specific keywords in titles, like admin panels.  
+- **`intitle:"keyword"`** – Seek specific keywords in titles of sites (the words you see in the tab or top of a window.  
   - *ex:* `intitle:"admin login"`
 
-- **`inurl:"keyword"`** – Get URLs that lead to sensitive portals or hidden areas.  
+- **`inurl:"keyword"`** – Seek specific keywords located in the URL of a site.  
   - *ex:* `inurl:"admin.php"`
 
-- **`intext:"keyword"`** – Look for juicy mentions within page content.  
+- **`intext:"keyword"`** – Look for juicy info in the body of a page's content.  
   - *ex:* `intext:"employee payroll"`
 
 - **`before:YYYY-MM-DD` / `after:YYYY-MM-DD`** – Restrict results to a specific timeframe.  
