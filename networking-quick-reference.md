@@ -4,6 +4,7 @@ Recommended OS: Kali Linux
 ## Table of Contents
 - [Network Utilities](#network-utilities)
 - [Netcat Commands](#netcat-commands)
+- [nslookup Commands](#nslookup-commands)
 - [Network Troubleshooting](#network-troubleshooting)
 
 ---
@@ -23,7 +24,7 @@ Recommended OS: Kali Linux
 - **`arp`**: Show or modify the ARP (Address Resolution Protocol) table. `arp -a`
 - **`wget`**: Download files from the web. `wget http://example.com/file.zip`
 
-
+- **`WHOIS`**: Database of DNS [here](https://www.whois.com/).
 ---
 
 ## Netcat Commands
@@ -42,9 +43,24 @@ Recommended OS: Kali Linux
 
 ---
 
+## nslookup Commands
+
+- **Basic DNS Lookup**: `nslookup <hostname>`  
+- **Use Specific DNS Server for Lookup**: `nslookup <hostname> <dns-server>`  
+- **Reverse DNS Lookup (IP to Domain)**: `nslookup <IP-address>`  
+- **Query DNS Record Type**:  `nslookup -type=<record-type> <hostname>`  
+  - Replace `<record-type>` with `A`, `AAAA`, `MX`, `TXT`, `SOA`, `CNAME`, etc.
+- **Query DNS for Specific Port**:  `nslookup -query=SRV _sip._tcp.<hostname>`  
+- **Set DNS Server to Use**:  `nslookup <hostname> <dns-server>`
+- **Trace the DNS Resolution Path**:  `nslookup -debug <hostname>`  
+- **Interactive Mode**:  `nslookup`  
+  - To query different record types (e.g., `set type=A`).
+
+---
+
 ## Network Troubleshooting
 
-- **`dig`**: Query DNS.  `dig example.com`
+- **`dig`**: Query DNS, alternative to nslookup.  `dig example.com`
 - **`tcpdump`**: Capture network traffic.  `sudo tcpdump -i eth0` or `sudo tcpdump src host <ip>`
 - **`hostname`**: Show or set hostname.  `hostname`
 - **`nfsstat`**: Display NFS (Network File System) statistics. `nfsstat -c`
