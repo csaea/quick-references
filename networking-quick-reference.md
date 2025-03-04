@@ -62,7 +62,7 @@ Recommended OS: Kali Linux
 
 - **`dig`**: Query DNS, alternative to nslookup.  `dig example.com`
 - **`tcpdump`**: Capture network traffic.  `sudo tcpdump -i eth0` or `sudo tcpdump src host <ip>`
-- **`hostname`**: Show or set hostname.  `hostname`
+- **`hostname`**: Display name of your computer on the network.  `hostname`
 - **`nfsstat`**: Display NFS (Network File System) statistics. `nfsstat -c`
 - **`iwconfig`**: Configure wireless network interfaces. `iwconfig wlan0`
 
