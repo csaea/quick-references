@@ -1,6 +1,6 @@
 # Pandas Quick Reference
 
-A quick-reference of common PANDAS commands (examples use aviation datasets). 
+A quick-reference of basic pandas commands (examples use aviation datasets). 
 
 ## Reading Data
 - **`df = pd.read_csv('airports.csv')`**: Load an airport dataset CSV into a DataFrame.
