@@ -1,32 +1,32 @@
-# Big O Examples and Notation
+# Big O Notation Reference 
 
-Big O (aka Big Order) is a shorthand way of measuring the worst case scenario (or upper bound) of an algorithm's time and space complexity, based on its input size. With Big O, you don't have to be precise, as its purpose is to only describe how bad it can get. That is, if an algorithm has code blocks with differing Big O complexities, always go with the slowest one. 
+Big O (Big Order) is a shorthand way of eye-balling the worst case scenario (upper bound) of an algorithm's time/space complexity relative to its input. With Big O, you don't have to be precise. Its purpose is to only estimate how slow or large an algorithm can become. So if an algorithm has code blocks with differing Big O complexities, always go with the slowest one. 
 
-For each example below, the input will be a list of 100 numbers, 1 to 100, named `items`.
 
 ## Constant Complexity - O(1)
 
-O(1) algorithms always take the same amount of time, no matter the input size. 
+O of (1) algorithms are fast and effecient. They always take the same amount of time, no matter the input size. 
 
 ```python
+items = list(range(100)) # items is an array [0...99]
+
 def constant_time(items):
     print(items[23])  
 ```
 ## Logarithmic Complexity O(log n)
 
-O(log N) algorithms halve the input repeatedly. Grows slowly. Good for large amount of inputs
+O of (log N) algorithms shrink the amount of inputs consistantly, so its time complexity grows slowly. Good for large amount of inputs.
 
 ```python
 def logarithmic_time(n):
-    count = 0
     while n > 1:
-        n //= 2
-        count += 1
-    print(count)
+        print(f"n is now {n}")
+        n = int(n / 2)
 ```
+
 ## Linear Complexity O(n)
 
-O(log n) algorithms take the same amount of time as the amount of inputs. Good for reasonable amount of inputs. 
+O of (n) algorithms take the same amount of time as the amount of inputs. Good for limited inputs. 
 
 ```python
 def linear_time(items):
@@ -34,6 +34,8 @@ def linear_time(items):
     for x in arr:
         print(x)
 ```
+
+## 
 
 ```python
 def linearithmic_time(items):
