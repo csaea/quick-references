@@ -5,7 +5,7 @@ Big O (Big Order) is a shorthand way of eye-balling the worst case scenario (upp
 
 ## Constant Complexity - O(1)
 
-O of (1) algorithms are fast and effecient. They always take the same amount of time, no matter the input size. 
+O of (1) algorithms always take the same amount of time, no matter the input size. 
 
 ```python
 items = list(range(100)) # items is an array [0...99]
@@ -13,9 +13,9 @@ items = list(range(100)) # items is an array [0...99]
 def constant_time(items):
     print(items[23])  
 ```
-## Logarithmic Complexity O(log n)
+## Logarithmic Complexity - O(log n)
 
-O of (log N) algorithms shrink the amount of inputs consistantly, so its time complexity grows slowly. Good for large amount of inputs.
+O of (log N) algorithms consistantly shrink the amount of inputs with each step. Its time complexity grows slowly, making it effecient for large datasets.
 
 ```python
 def logarithmic_time(n):
