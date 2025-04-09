@@ -1,12 +1,12 @@
 # Big O Examples and Notation
 
-Big O (aka Big Order) is a shorthand way of describing the worst case scenario (or upper bound) of an algorithm's time and space complexity, relative to its input size. With Big O, you don't have to be precise, as its purpose is to only describe how bad it can get. If an algorithm has multiple segments with different Big O notations, always go with the slowest one. 
+Big O (aka Big Order) is a shorthand way of measuring the worst case scenario (or upper bound) of an algorithm's time and space complexity, based on its input size. With Big O, you don't have to be precise, as its purpose is to only describe how bad it can get. That is, if an algorithm has code blocks with differing Big O complexities, always go with the slowest one. 
 
-For each example below, the input will be a list of 100 numbers, 1 to 100, called `items`.
+For each example below, the input will be a list of 100 numbers, 1 to 100, named `items`.
 
 ## Constant Complexity - O(1)
 
-O(1) algorithms always takes the same amount of time, no matter the input size. It's the fastest possible speed. 
+O(1) algorithms always take the same amount of time, no matter the input size. 
 
 ```python
 def constant_time(items):
@@ -14,7 +14,7 @@ def constant_time(items):
 ```
 ## Logarithmic Complexity O(log n)
 
-O(log N) algorithms halves the input repeatedly. Grows slowly. Good for large amount of inputs
+O(log N) algorithms halve the input repeatedly. Grows slowly. Good for large amount of inputs
 
 ```python
 def logarithmic_time(n):
@@ -22,7 +22,7 @@ def logarithmic_time(n):
     while n > 1:
         n //= 2
         count += 1
-    print(f"Steps: {count}")
+    print(count)
 ```
 ## Linear Complexity O(n)
 
