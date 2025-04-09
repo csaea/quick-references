@@ -1,21 +1,20 @@
 # Big O Examples and Notation
 
-Big O (aka Big Order) is a shorthand way of describing the worst case scenario (or upper bound) of an algorithm's time and space complexity, relative to its input size. With Big O, you don't have to be precise, as its purpose is to only describe how bad it can get. 
+Big O (aka Big Order) is a shorthand way of describing the worst case scenario (or upper bound) of an algorithm's time and space complexity, relative to its input size. With Big O, you don't have to be precise, as its purpose is to only describe how bad it can get. If an algorithm has multiple segments with different Big O notations, always go with the slowest one. 
 
 For each example below, the input will be a list of 100 numbers, 1 to 100, called `items`.
 
-## Constant Time - O(1)
+## Constant Complexity - O(1)
 
-Algorithm always takes the same amount of time regardless of input size. Fastest possible speed. 
+O(1) algorithms always takes the same amount of time, no matter the input size. It's the fastest possible speed. 
 
 ```python
 def constant_time(items):
-    print(items[3])  
-    print()
+    print(items[23])  
 ```
-## Logarithmic Time O(log n)
+## Logarithmic Complexity O(log n)
 
-Algorithm halves the input repeatedly. Grows slowly. 
+O(log N) algorithms halves the input repeatedly. Grows slowly. Good for large amount of inputs
 
 ```python
 def logarithmic_time(n):
@@ -24,17 +23,16 @@ def logarithmic_time(n):
         n //= 2
         count += 1
     print(f"Steps: {count}")
-    print()  
 ```
+## Linear Complexity O(n)
+
+O(log n) algorithms take the same amount of time as the amount of inputs. Good for reasonable amount of inputs. 
 
 ```python
 def linear_time(items):
-    print("Linear (O(n)):")
-    total = 0
-    for item in items:
-        total += item
-    print(f"Total: {total}")
-    print()  # Processes each item once; time grows directly with input size
+    arr = [...]
+    for x in arr:
+        print(x)
 ```
 
 ```python
@@ -45,9 +43,12 @@ def linearithmic_time(items):
     print()  # Sorting often involves dividing and merging; faster than O(n^2), slower than O(n)
 ```
 
+## Quadratic Complexity O(N^2)
+
+O(N^2) algorithm has exponential growth for each input.
+
 ```python
 def quadratic_time(items):
-    print("Quadratic (O(n^2)):")
     count = 0
     for i in items:
         for j in items:
