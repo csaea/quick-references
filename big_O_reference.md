@@ -1,6 +1,8 @@
-# Big O Time Examples and Notation
+# Big O Examples and Notation
 
-Big O (or Big Order of Growth) is a shorthand for describing the worst case scenario (aka upper bound) of an algorithm's time and space, relative to its input size. With Big O, you don't have to be precise, as its purpose is to only describe how bad it can get. 
+Big O (aka Big Order) is a shorthand way of describing the worst case scenario (or upper bound) of an algorithm's time and space complexity, relative to its input size. With Big O, you don't have to be precise, as its purpose is to only describe how bad it can get. 
+
+For each example below, the input will be a list of 100 numbers, 1 to 100, called `items`.
 
 ## Constant Time - O(1)
 
@@ -8,22 +10,21 @@ Algorithm always takes the same amount of time regardless of input size. Fastest
 
 ```python
 def constant_time(items):
-    print("Constant (O(1)):")
     print(items[3])  
     print()
 ```
-
 ## Logarithmic Time O(log n)
+
+Algorithm halves the input repeatedly. Grows slowly. 
 
 ```python
 def logarithmic_time(n):
-    print("Logarithmic (O(log n)):")
     count = 0
     while n > 1:
         n //= 2
         count += 1
     print(f"Steps: {count}")
-    print()  # Halves the input repeatedly; grows slowly
+    print()  
 ```
 
 ```python
