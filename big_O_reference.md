@@ -29,7 +29,6 @@ O of (log N) algorithms consistantly shrink the amount of inputs with each step.
 ```python
 def logarithmic_time(n):
     while n > 1:
-        print(f"n is now {n}")
         n = int(n / 2)
 ```
 
