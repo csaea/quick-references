@@ -54,7 +54,7 @@ def linearithmic_time(items):
     print()  # Sorting often involves dividing and merging; faster than O(n^2), slower than O(n)
 ```
 
-## Quadratic O(N^2)
+## Quadratic - O(n²)
 
 O(N^2) algorithm has exponential growth for each input.
 
