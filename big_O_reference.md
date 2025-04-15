@@ -6,15 +6,18 @@ Below are four complexities considered to be 'reasonable time'. Common complexit
 
 ## Table of Contents
 
-| Function       | Big O Notation | Link |
-|----------------|----------------|------|
-| Constant       | O(1)           | [↘](#constant---o1) |
-| Logarithmic    | O(log n)       | [↘](#logarithmic---olog-n) |
-| Linear         | O(n)           | [↘](#linear---on) |
-| Linearithmic   | O(n log n)     | [↘](#linearithmic---on-log-n) |
-| Quadratic      | O(n²)          | [↘](#quadratic---on²) |
-| Exponential    | O(2ⁿ)          | [↘](#exponential---o2n) |
-| Factorial      | O(n!)          | [↘](#factorial---on) |
+## Table of Contents
+
+| Function       | Big O Notation |
+|----------------|----------------|
+| [Constant](#constant---o1)       | O(1)           |
+| [Logarithmic](#logarithmic---olog-n)    | O(log n)       |
+| [Linear](#linear---on)         | O(n)           |
+| [Linearithmic](#linearithmic---on-log-n)   | O(n log n)     |
+| [Quadratic](#quadratic---on²)      | O(n²)          |
+| [Exponential](#exponential---o2n)    | O(2ⁿ)          |
+| [Factorial](#factorial---on)      | O(n!)          |
+
 
 
 ## Constant - O(1)
