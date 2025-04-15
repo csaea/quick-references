@@ -9,10 +9,7 @@ Below are four complexities considered to be 'reasonable time'. Common complexit
 | [Constant](#constant---o1)       | O(1)           |
 | [Logarithmic](#logarithmic---olog-n)    | O(log n)       |
 | [Linear](#linear---on)         | O(n)           |
-| [Linearithmic](#linearithmic---on-log-n)   | O(n log n)     |
-| [Quadratic](#quadratic---on²)      | O(n²)          |
-| [Exponential](#exponential---o2n)    | O(2ⁿ)          |
-| [Factorial](#factorial---on)      | O(n!)          |
+
 
 ## Constant - O(1)
 
