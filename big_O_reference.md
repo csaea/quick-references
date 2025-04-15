@@ -4,9 +4,7 @@ Big O (Big Order) is a shorthand way of eye-balling the worst case scenario (upp
 
 Below are four complexities considered to be 'reasonable time'. Common complexities considered to be 'unreasonable' are O(n2) or O(n!).
 
-## Table of Contents
-
-## Table of Contents
+## Contents
 
 | Function       | Big O Notation |
 |----------------|----------------|
