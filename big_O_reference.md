@@ -2,10 +2,24 @@
 
 Big O (Big Order) is a shorthand way of eye-balling the worst case scenario (upper bound) of an algorithm's time/space complexity relative to its input. With Big O, you don't have to be precise. Its purpose is to only estimate how slow or large an algorithm can become. So if an algorithm has code blocks with differing Big O complexities, always go with the slowest one. 
 
+Below are four complexities considered to be 'reasonable time'. Common complexities considered to be 'unreasonable' are O(n2) or O(n!).
 
-## Constant Complexity - O(1)
+## Table of Contents
 
-O of (1) algorithms always take the same amount of time, no matter the input size. 
+| Function       | Big O Notation | Link |
+|----------------|----------------|------|
+| Constant       | O(1)           | [↘](#constant---o1) |
+| Logarithmic    | O(log n)       | [↘](#logarithmic---olog-n) |
+| Linear         | O(n)           | [↘](#linear---on) |
+| Linearithmic   | O(n log n)     | [↘](#linearithmic---on-log-n) |
+| Quadratic      | O(n²)          | [↘](#quadratic---on²) |
+| Exponential    | O(2ⁿ)          | [↘](#exponential---o2n) |
+| Factorial      | O(n!)          | [↘](#factorial---on) |
+
+
+## Constant - O(1)
+
+O of (1) algorithms are constant because no matter the input size, they always take the same amount of time.  
 
 ```python
 items = list(range(100)) # items is an array [0...99]
@@ -13,7 +27,7 @@ items = list(range(100)) # items is an array [0...99]
 def constant_time(items):
     print(items[23])  
 ```
-## Logarithmic Complexity - O(log n)
+## Logarithmic - O(log n)
 
 O of (log N) algorithms consistantly shrink the amount of inputs with each step. Its time complexity grows slowly, making it effecient for large datasets.
 
@@ -24,7 +38,7 @@ def logarithmic_time(n):
         n = int(n / 2)
 ```
 
-## Linear Complexity O(n)
+## Linear O(n)
 
 O of (n) algorithms take the same amount of time as the amount of inputs. Good for limited inputs. 
 
@@ -45,7 +59,7 @@ def linearithmic_time(items):
     print()  # Sorting often involves dividing and merging; faster than O(n^2), slower than O(n)
 ```
 
-## Quadratic Complexity O(N^2)
+## Quadratic O(N^2)
 
 O(N^2) algorithm has exponential growth for each input.
 
