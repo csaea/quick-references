@@ -41,7 +41,7 @@ def logarithmic_time(n):
         n = int(n / 2)
 ```
 
-## Linear O(n)
+## Linear - O(n)
 
 O of (n) algorithms take the same amount of time as the amount of inputs. Good for limited inputs. 
 
