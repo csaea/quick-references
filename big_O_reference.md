@@ -1,10 +1,8 @@
 # Big O Notation Reference 
 
-Big O (Big Order) is a shorthand way of eye-balling the worst case scenario (upper bound) of an algorithm's time/space complexity relative to its input. With Big O, you don't have to be precise. Its purpose is to only estimate how slow or large an algorithm can become. So if an algorithm has code blocks with differing Big O complexities, always go with the slowest one. 
+Big O (Big Order) Notation is a way of estimating the time/space cost of an algorithm. Big O eye-balls the worst-case-scenario (aka upper bound) of an algorithm's time/space complexity relative to its input. With Big O, you don't have to be precise. Its purpose is to only estimate how slow or large an algorithm can become. So if an algorithm has code blocks with differing Big O complexities, always go with the slowest one. 
 
 Below are four complexities considered to be 'reasonable time'. Common complexities considered to be 'unreasonable' are O(n2) or O(n!).
-
-## Contents
 
 | Function       | Big O Notation |
 |----------------|----------------|
@@ -15,8 +13,6 @@ Below are four complexities considered to be 'reasonable time'. Common complexit
 | [Quadratic](#quadratic---on²)      | O(n²)          |
 | [Exponential](#exponential---o2n)    | O(2ⁿ)          |
 | [Factorial](#factorial---on)      | O(n!)          |
-
-
 
 ## Constant - O(1)
 
